@@ -12,9 +12,6 @@ fn main() {
         process::exit(1);
     });
 
-    println!("Searching for \'{}\' ", config.query);
-    println!("In the file {}", config.file_path);
-
     // here we handle Result error case like this because the run fn does
     // not return any instance like config. Hence we use if let to detect
     // only if the error is being returned back.
